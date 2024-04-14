@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "1.0",
+  "name": "Test Mod",
+  "description": "",
+  "authors": [
+    "Lunatic"
+  ],
+  "license": "WTFPL",
+  "icon": "assets/lunaticlibfabric/icon.png",
+  "environment": "*",
+  "mixins": [
+    "testmod.mixins.json"
+  ]
+}

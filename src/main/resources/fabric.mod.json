@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "lunaticlibfabric",
+  "version": "${version}",
+  "name": "LunaticLib [Fabric]",
+  "description": "Code-Library for my Fabric-Mods, so i don't need to rewrite everything every time.",
+  "authors": [
+    "Lunatic"
+  ],
+  "license": "MIT",
+  "icon": "assets/lunaticlibfabric/icon.png",
+  "environment": "*",
+  "mixins": [
+    "lunaticlibfabric.mixins.json"
+  ],
+  "depends": {
+    "fabric-api": "*"
+  },
+  "accessWidener": "lunaticlibfabric.accesswidener"
+}

@@ -49,8 +49,21 @@ jar {
 }
 
 publishing {
+    repositories {
+        maven {
+            name = "lunaticRepository"
+            url = "https://maven.chloedev.de/releases"
+            credentials(PasswordCredentials)
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+    }
     publications {
         mavenJava(MavenPublication) {
+            groupId = "${project.group_id}"
+            artifactId = "${project.artifact_id}"
+            version = "${project.mod_version}"
             from components.java
         }
     }

@@ -1,6 +1,6 @@
 package me.lunatic.testmod.mixin;
 
-import me.lunatic.testmod.ui.screen.TestScreen;
+import me.lunatic.testmod.ui.screen.ExampleScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -19,6 +19,6 @@ public class MixinTitleScreen extends Screen {
 
     @Inject(method = "init", at = @At("TAIL"))
     public void init(CallbackInfo ci) {
-        this.addDrawableChild(ButtonWidget.builder(Text.literal("Test-Screen"), button -> this.client.setScreen(new TestScreen())).dimensions(4, this.height - 24, 75, 20).build());
+        this.addDrawableChild(ButtonWidget.builder(Text.literal("Test-Screen"), button -> this.client.setScreen(new ExampleScreen())).dimensions(4, this.height - 24, 75, 20).build());
     }
 }

@@ -47,7 +47,7 @@ public abstract class AbstractOption<T> {
     }
 
     public ClickableWidget createWidget(int x, int y, int width, int height) {
-        return new PressableWidget(x, y, width, height, Text.literal(this.key)) {
+        return new PressableWidget(x, y, width, height, Text.literal(this.getKey()).append(": ").append(getValueText().apply(getValue()))) {
             @Override
             public void onPress() {
                 AbstractOption.this.valueChangeCallback.onValueChange(value);

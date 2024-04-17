@@ -14,23 +14,9 @@ public class ExampleScreen extends Screen {
     @Override
     protected void init() {
         OptionListWidget list = new OptionListWidget(0, 0, this.width, this.height);
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
-        list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
+        for (int i = 0; i < 15; i++) {
+            list.addSingleOption(new BooleanCyclingOption("Test-Option", true, val -> System.out.println("CLICKED")));
+        }
         this.addDrawableChild(list);
     }
 }

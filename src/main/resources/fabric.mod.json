@@ -16,5 +16,12 @@
   "depends": {
     "fabric-api": "*"
   },
-  "accessWidener": "lunaticlibfabric.accesswidener"
+  "accessWidener": "lunaticlibfabric.accesswidener",
+  "custom": {
+    "modmenu": {
+      "badges": [
+        "library"
+      ]
+    }
+  }
 }
